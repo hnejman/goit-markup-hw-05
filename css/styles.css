@@ -318,6 +318,7 @@ h2{
 .port-card{
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    height: 404px;
 }
 .port-card:hover,
 .port-card:focus{
@@ -346,6 +347,37 @@ h2{
     margin-top: 4px;
     margin-bottom: 20px;
     margin-left: 24px;
+}
+
+.port-card-overlay-container{
+    position: relative;
+    top: -402px;
+    overflow: hidden;
+    width: 370;
+    height: 294;
+}
+
+.port-card-overlay{
+    background: rgba(33, 150, 243, 0.9);
+    color: #fff;
+    position: relative;
+    top: 294px;
+    width: 301px;
+    height: 196px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 49px 45px 49px 24px;
+
+    transform: translatey(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.port-card:hover .port-card-overlay{
+    transform: translateY(-294px);
 }
 
 /* ===END=MAIN====== */
