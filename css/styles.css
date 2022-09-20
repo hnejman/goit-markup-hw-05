@@ -100,7 +100,7 @@ body{
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus{
-    color: #2196F3;
+    color: var(--main-color);
 }
 
 .contact-list{
@@ -126,7 +126,35 @@ cursor: pointer;
 .contact-list-item:hover a,
 .contact-list-item:focus a{
     color: var(--main-color);
-    fill: #2196f3 ;
+    fill: var(--main-color) ;
+}
+
+.navigation-list-item:hover::after,
+.contact-list-item:focus::after{
+    content:attr(data-width);
+    /* color:transparent; */
+    display:block;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    position: relative;
+    top:29px;
+}
+
+.current::after{
+    content:"";
+    display:block;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    position: relative;
+    top:29px;
+    z-index: -2;
+}
+
+.navigation-list-item .current{
+    color: var(--main-color);
 }
 
 /* ===END=HEADER====== */
