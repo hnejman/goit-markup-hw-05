@@ -150,7 +150,6 @@ cursor: pointer;
     background-color: var(--main-color);
     position: relative;
     top:29px;
-    z-index: -2;
 }
 
 .navigation-list-item .current{
@@ -423,7 +422,7 @@ h2{
 }
 
  .footer .navigation-logo {
-    color: #ffffff;
+    color: #fff;
  }
  
  .footer-list{
@@ -432,8 +431,12 @@ h2{
     gap: 9px;
 }
 
- .footer .address{
+.footer-list-item a{
     color: rgba(255, 255, 255, 0.6);
+}
+
+ .footer .address{
+    color: #fff;
     margin-bottom: 9px;
  }
 
