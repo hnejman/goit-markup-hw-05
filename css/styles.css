@@ -510,6 +510,17 @@ h2{
     right: 0;
     background: rgba(0, 0, 0, 0.2);
     cursor: not-allowed;
+
+    transition-property: opacity;
+    transition-duration: 2s;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+
+    transform: translatey(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
@@ -526,6 +537,9 @@ h2{
 }
 
 .close-btn{
+    position: relative;
+    left: calc(100% - 38px);
+    top: 8px;
     cursor: pointer;
     border-radius: 50%;
     width: 30px;
@@ -536,8 +550,11 @@ h2{
     padding-top: 2px;
 }
 
+
 .is-hidden{
-    opacity: 0;
-    visibility: hidden;
     pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
 }
+
+  
